@@ -15,7 +15,35 @@ h1, h2, h3, h4, h5, h6 {
 /* ===== NAVIGATION ===== */
 nav {
     position: absolute;
+    top: 0;
+    right: .5em;
     z-index: 10;
+}
+nav ul {
+    display: flex;
+    margin-top: 0;
+}
+nav ul li {
+    list-style-type: none;
+    margin: 0 .5em;
+    width: 100px;
+    height: 75px;
+    background: hsla(0,100%,100%,.6);
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 85%);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    /* padding: 0 15px 20px; */
+    padding-bottom: 20px;
+}
+    nav ul li:nth-of-type(2) {
+        clip-path: polygon(0 0, 100% 0%, 100% 85%, 0 100%);
+    }
+nav ul li a {
+    text-decoration: none;
+    color: #111000;
+    font-weight: 600;
 }
 
 /* ===== HEADER ===== */
@@ -36,7 +64,7 @@ header {
     max-width: 250px;
     position: absolute;
     top: 0;
-    right: 0;
+    left: 0;
     padding: 1em;
 }
 
