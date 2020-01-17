@@ -7,10 +7,12 @@
 body {
     margin: 0;
     color: #2b2b2b;
+    background: #fefefe;
 }
 
 h1, h2, h3, h4, h5, h6 {
     text-align: center;
+    font-family: 'Merriweather', serif;
 }
 
 /* ===== NAVIGATION ===== */
@@ -20,10 +22,12 @@ nav {
     right: .5em;
     z-index: 10;
 }
+
 nav ul {
     display: flex;
     margin-top: 0;
 }
+
 nav ul a {
     list-style-type: none;
     margin: -25px .5em 0;
@@ -38,13 +42,16 @@ nav ul a {
     padding-bottom: 25px;
     transition: all 0.2s ease;
 }
-    nav ul a:nth-of-type(2) {
-        clip-path: polygon(0 0, 100% 0%, 100% 85%, 0 100%);
-    }
+
+nav ul a:nth-of-type(2) {
+    clip-path: polygon(0 0, 100% 0%, 100% 85%, 0 100%);
+}
+
 nav ul a:hover {
     margin: 0 .5em;
     background: hsla(0,100%,100%,.85);
 }
+
 nav ul a {
     text-decoration: none;
     color: #2b2b2b;
@@ -59,7 +66,6 @@ header {
     background-position: center center;
     height: 80vh;
     width: 100%;
-    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -91,4 +97,25 @@ header h2 {
     max-width: 500px;
     font-weight: 600;
     margin-top: 5px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* ===== PORTFOLIO ===== */
+#portfolio aside {
+    max-width: 20%;
+    border-right: solid 1px #b08f26;
+}
+#portfolio h2, 
+#portfolio h3 {
+    background-image: url('../img/teal-bg-horizontal.jpg');
+    background-size: cover;
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    padding: 1em;
+    max-width: 60%;
+    margin-left: 0.5em;
+    border: solid 2px #b08f26;
+}
+
+#portfolio h2 {
+    max-width: 85%;
 }
