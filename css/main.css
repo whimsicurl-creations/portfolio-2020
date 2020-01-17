@@ -24,7 +24,7 @@ nav ul {
     display: flex;
     margin-top: 0;
 }
-nav ul li {
+nav ul a {
     list-style-type: none;
     margin: -25px .5em 0;
     width: 100px;
@@ -38,14 +38,14 @@ nav ul li {
     padding-bottom: 25px;
     transition: all 0.2s ease;
 }
-    nav ul li:nth-of-type(2) {
+    nav ul a:nth-of-type(2) {
         clip-path: polygon(0 0, 100% 0%, 100% 85%, 0 100%);
     }
-nav ul li:hover {
+nav ul a:hover {
     margin: 0 .5em;
     background: hsla(0,100%,100%,.85);
 }
-nav ul li a {
+nav ul a {
     text-decoration: none;
     color: #2b2b2b;
     font-weight: 600;
