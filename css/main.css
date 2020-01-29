@@ -20,7 +20,7 @@ h1, h2, h3, h4, h5, h6 {
 nav {
     position: absolute;
     top: 0;
-    right: .5em;
+    right: .5rem;
     z-index: 10;
 }
 
@@ -31,7 +31,7 @@ nav ul {
 
 nav ul a {
     list-style-type: none;
-    margin: -25px .5em 0;
+    margin: -25px .5rem 0;
     width: 100px;
     height: 100px;
     background: hsla(0,100%,100%,.6);
@@ -77,12 +77,12 @@ header {
     position: absolute;
     top: 0;
     left: 0;
-    padding: 1em;
+    padding: 1rem;
 }
 
 #header-text {
     border: solid 3px #b08f26;
-    padding: 3em 8em;
+    padding: 3rem 8rem;
     max-width: 70%;
     justify-content: center;
     align-items: center;
@@ -106,19 +106,19 @@ header h2 {
     width: 33%;
     max-width: 350px;
     border-right: solid 1px #b08f26;
-    margin-left: 20px;
-    padding: 2em 0;
+    padding: 2rem 0;
 }
 #portfolio h2, 
 #portfolio h3 {
     background-image: url('../img/teal-bg-horizontal.jpg');
     background-size: cover;
-    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
-    padding: 1em;
+    clip-path: polygon(0% 0%, 100% 0%, 75% 100%, 0% 100%);
+    padding: 1rem 1rem 1rem 2rem;
     max-width: 60%;
     min-width: 190px;
-    margin-left: 0.5em;
     border: solid 2px #b08f26;
+    border-left: none;
+    text-align: left;
 }
 #portfolio h2 {
     max-width: 85%;
@@ -131,13 +131,13 @@ header h2 {
     background-repeat: no-repeat;
     background-position: center left;
     height: 600px;
-    padding: 2em;
+    padding: 2rem;
 }
 #about h2 {
     background-color: hsla(0,100%,100%,.4);
-    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    clip-path: polygon(15% 0%, 100% 0%, 85% 100%, 0% 100%);
     max-width: 30%;
-    padding: 1em;
+    padding: 1rem;
     border: solid 2px #b08f26;
-    margin: 1em auto;
+    margin: 1rem auto;
 }
