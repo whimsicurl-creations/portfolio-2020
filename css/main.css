@@ -122,6 +122,7 @@ header h2 {
 }
 #portfolio h2 {
     max-width: 85%;
+    clip-path: polygon(0% 0%, 100% 0%, 80% 100%, 0% 100%);
 }
 
 /* ===== ABOUT ===== */
